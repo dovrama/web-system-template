@@ -1,10 +1,15 @@
 # WEB system
+- Dad Jokes powered by VGTU
 - [ ] Replace "WEB system" with your system name
 
 ## Description
+- Dad Jokes powered by VGTU is a system that displays you a random dad joke. You don't have to register or create any user, enter URL of this system into your browser and voilà, dad joke is presented to you! If you are not satisfied with current joke, you can generate a new one by clicking on a new joke button! Enjoy!
+
 - [ ] Provide WEB system description in few sentences - its purpose, users, etc.
 
 ## Entity definition
+- DadJoke(id(number(1000)), joke(string(10000)), dateCreated(date), likeCounter(number), lastDownloaded(date), lastTimeLiked(date), timeDownloaded(number))
+
 - [ ] Define the entity ("object" that will be manipulated) of WEB system
 - [ ] Entity should have a name
 - [ ] Entity should have 3 mandatory attributes:
@@ -16,6 +21,13 @@
     - [ ] Each attribute should have restrictions defined: list of constants, or number range, or string length, or string format, or object schema, or array schema or other. For example, you can use `joi` language to define restrictions: https://github.com/hapijs/joi/blob/v13.1.2/API.md
 
 ## API definition
+- Fetch a random dad joke - GET https://icanhazdadjoke.com/ 
+- Create dad joke - POST /api/jokes - body will be joke (without ID)
+- Download dad joke - GET /api/jokes/:id - as TXT
+- Search for dad jokes - GET https://icanhazdadjoke.com/search 
+
+- ERRORAI PRIE KIEKVIENO
+
 - [ ] Define specific service (konkrečios paslaugos) API methods that WEB system is going to use
 - [ ] Optionally define additional API methods that WEB system is going to expose
 - [ ] API should have at least 4 methods
@@ -33,6 +45,9 @@
 - [ ] Should return all 5xx errors in unified format. Define format using `joi` language
 
 ## UI definition
+- Simple site with an image displayed up front and text-box below with a joke displayed in it, below text-box there are 4 buttons (new joke, create joke , save joke, search jokes)
+- https://wireframe.cc/HLU00D
+
 - [ ] Define the structure of how visually the WEB system is going to look like
 - [ ] Should have at least one view defined with https://wireframe.cc (or other wireframe tool):
 - [ ] The view should have a title
