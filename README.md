@@ -43,7 +43,7 @@
 - [ ] Should return all 5xx errors in unified format. Define format using `joi` language
 
 ## UI definition
-- Simple site with an image (around image there are counter for: times liked, times downloaded, date created, last time liked and las5t time downloaded) displayed up front and text-box below with a joke displayed in it, below text-box there are 4 buttons (new joke, create joke , download joke, search for joke)
+- Simple site with an image (around image there are counters for: times liked, times downloaded, date created, last time liked and last time downloaded) displayed up front and text-box below with a joke displayed in it, below text-box there are 4 buttons (new joke, create joke , download joke, search for joke)
 - https://wireframe.cc/HLU00D
 
 - [ ] Define the structure of how visually the WEB system is going to look like
