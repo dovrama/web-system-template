@@ -1,6 +1,6 @@
 # WEB system
 - Dad Jokes powered by VGTU
-- [ ] Replace "WEB system" with your system name
+- [x] Replace "WEB system" with your system name
 
 ## Description
 - Dad Jokes powered by VGTU is a system that displays you a random dad joke. You don't have to register or create any user, enter URL of this system into your browser and voilà, dad joke is presented to you! If you are not satisfied with current joke, you can generate a new one by clicking on a new joke button! Enjoy!
