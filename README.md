@@ -8,7 +8,7 @@
 - [ ] Provide WEB system description in few sentences - its purpose, users, etc.
 
 ## Entity definition
-- DadJoke(id(number(1000)), joke(string(10000)), dateCreated(date), likeCounter(number), lastDownloaded(date), lastTimeLiked(date), timeDownloaded(number))
+- dadJoke(id(number(1000)), joke(string(10000)), dateCreated(date), likeCounter(number), lastTimeDownloaded(date), lastTimeLiked(date), timesDownloaded(number))
 
 - [ ] Define the entity ("object" that will be manipulated) of WEB system
 - [ ] Entity should have a name
@@ -21,12 +21,10 @@
     - [ ] Each attribute should have restrictions defined: list of constants, or number range, or string length, or string format, or object schema, or array schema or other. For example, you can use `joi` language to define restrictions: https://github.com/hapijs/joi/blob/v13.1.2/API.md
 
 ## API definition
-- Fetch a random dad joke - GET https://icanhazdadjoke.com/ 
-- Create dad joke - POST /api/jokes - body will be joke (without ID)
-- Download dad joke - GET /api/jokes/:id - as TXT
-- Search for dad jokes - GET https://icanhazdadjoke.com/search 
-
-- ERRORAI PRIE KIEKVIENO
+- Fetch a random dad joke - GET https://icanhazdadjoke.com/ - ERROR: Couldn't retrieve joke, try again;
+- Create dad joke - POST /api/jokes - body will be joke (without ID (auto-gee\nerated)) - ERROR: Too much symbols; Illegal symbols; 
+- Download dad joke - GET /api/jokes/:id - as TXT - ERROR: Couldn't create a joke in your system;
+- Search for dad jokes - GET https://icanhazdadjoke.com/search - ERROR: Couldn't find joke; Invalid phrase; Too much symbols; Illegal symbols;
 
 - [ ] Define specific service (konkrečios paslaugos) API methods that WEB system is going to use
 - [ ] Optionally define additional API methods that WEB system is going to expose
