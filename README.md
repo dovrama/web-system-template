@@ -21,10 +21,10 @@
     - [ ] Each attribute should have restrictions defined: list of constants, or number range, or string length, or string format, or object schema, or array schema or other. For example, you can use `joi` language to define restrictions: https://github.com/hapijs/joi/blob/v13.1.2/API.md
 
 ## API definition
-- Fetch a random dad joke - GET https://icanhazdadjoke.com/ - ERROR: Couldn't retrieve joke, try again;
+- Fetch a random dad joke - GET https://icanhazdadjoke.com/ - ERROR: Couldn't retrieve joke, try again (server error);
 - Create dad joke - POST /api/jokes - body will be joke (without ID (auto-gee\nerated)) - ERROR: Too much symbols; Illegal symbols; 
-- Download dad joke - GET /api/jokes/:id - as TXT - ERROR: Couldn't create a joke in your system;
-- Search for dad jokes - GET https://icanhazdadjoke.com/search - ERROR: Couldn't find joke; Invalid phrase; Too much symbols; Illegal symbols;
+- Download dad joke - GET /api/jokes/:id - as TXT - ERROR: Couldn't create a joke in your system (server error);
+- Search for dad jokes - GET https://icanhazdadjoke.com/search - ERROR: Couldn't find joke (joke/id not found); Too much symbols; Illegal symbols;
 
 - [ ] Define specific service (konkrečios paslaugos) API methods that WEB system is going to use
 - [ ] Optionally define additional API methods that WEB system is going to expose
@@ -43,7 +43,7 @@
 - [ ] Should return all 5xx errors in unified format. Define format using `joi` language
 
 ## UI definition
-- Simple site with an image displayed up front and text-box below with a joke displayed in it, below text-box there are 4 buttons (new joke, create joke , save joke, search jokes)
+- Simple site with an image (around image there are counter for: times liked, times downloaded, date created, last time liked and las5t time downloaded) displayed up front and text-box below with a joke displayed in it, below text-box there are 4 buttons (new joke, create joke , download joke, search for joke)
 - https://wireframe.cc/HLU00D
 
 - [ ] Define the structure of how visually the WEB system is going to look like
